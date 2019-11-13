@@ -10,8 +10,8 @@
 clc;clear;
 %读取地图：num为double类型，txt为cell类型，raw为cell类型（同时读取num和txt）
 [num, txt, raw] = xlsread('lab.xlsx');
-start = [1,1];
-goal = [15,71];
+start = [2,2];
+goal = [3,76];
 
 grid = DejaMadeMap(num,start,goal);
 

@@ -35,7 +35,7 @@ while ~isequal(current(1:2),goal)
         for i=1:length(children(:,1))
             if BinA(open(:,1:2),children(i,1:2))~=0 %if the child is already present in the open but with a more expensive cost
                 if(children(i,3)<open(BinA(open(:,1:2),children(i,1:2)),3))
-                    BinA(open(:,1:2),children(i,1:2))
+                    BinA(open(:,1:2),children(i,1:2));
                     open(BinA(open(:,1:2),children(i,1:2)),:)=children(i,:);
                 end
             else
