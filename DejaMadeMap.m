@@ -14,7 +14,7 @@ for i = 1:Vertical
     Y=[Y; 12*(i-1)+6];
 end
 Strip=Map;
-for i = 1:Horizontal-1
+for i = 1:Horizontal
     Map = [Map Strip];
     X=[X; 12*(i-1)+6];
 end
