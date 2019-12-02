@@ -8,15 +8,15 @@ Horizontal =sizemap(2);
 %Generating one block
 i = [0 ones(1,10) 0];
 Block = [ zeros(1,12); i;i;i;i;i;i;i;i;i;i;zeros(1,12)];
-Map=[];X=[6];Y=[];
+Map=[];X=[];Y=[];
 for i = 1:Vertical
     Map = [Map;Block];
-    Y=[Y; 12*(i-1)+6];
+    Y=[Y; 12*(i-1)];
 end
 Strip=Map;
-for i = 2:Horizontal
+for i = 1:Horizontal-1
     Map = [Map Strip];
-    X=[X; 12*(i-1)+6];
+    X=[X; 12*(i-1)];
 end
 [x,y]=find(map);
 for k=1:length(x)
